@@ -1,0 +1,5 @@
+ValConvex Windows icon build fix
+
+The ValConvex.spec file embeds the dedicated valconvex.ico in the EXE via icon=str(ROOT / "valconvex.ico").
+The batch builder MUST NOT pass --icon when invoking a .spec file; PyInstaller rejects makespec options such as --icon in that mode.
+The correct command is: py -m PyInstaller --clean --noconfirm ValConvex.spec

@@ -1,0 +1,12 @@
+ValConvex updated source package
+
+This package contains the updated Python source, tests, Windows PyInstaller spec, and build_valconvex.bat.
+The existing compiled executable from the input archive has intentionally been excluded so it cannot be mistaken for the updated build.
+
+To create the updated Windows executable:
+1. Extract this folder on Windows.
+2. Ensure Python 3.10+ and internet access are available.
+3. Run build_valconvex.bat.
+4. The updated executable will be created at dist\ValConvex.exe.
+
+The source was syntax-checked and the automated tests were run in the current environment. A Windows executable could not be compiled in this Linux environment.
